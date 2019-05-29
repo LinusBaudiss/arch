@@ -58,7 +58,7 @@
 * WLAN mit wifi-menu einrichten
 * Hinzufügen eines Nutzers
 `useradd -m -g users -s /bin/bash linus`
-* Installieren von sudo und vim
+* Installieren von sudo, vim und git
 * Sudo Einrichtung
 `EDITOR=nano visudo`
 `%wheel ALL=(ALL) ALL`
