@@ -10,3 +10,5 @@
 * sudo
 * git
 * openssh
+* htop
+* neofetch
