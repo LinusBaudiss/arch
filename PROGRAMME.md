@@ -28,6 +28,7 @@
 * dwm (aur)
 * acpi
 ## Sonstiges
-* intellij-idea-community-edition
+* cifs-utils
+* eclipse-java 
 * firefox
 * firefox-i18n-de
