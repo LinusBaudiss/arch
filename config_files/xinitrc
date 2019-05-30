@@ -1,0 +1,51 @@
+#!/bin/sh
+
+userresources=$HOME/.Xresources
+usermodmap=$HOME/.Xmodmap
+sysresources=/etc/X11/xinit/.Xresources
+sysmodmap=/etc/X11/xinit/.Xmodmap
+
+# merge in defaults and keymaps
+
+if [ -f $sysresources ]; then
+
+    xrdb -merge $sysresources
+
+fi
+
+if [ -f $sysmodmap ]; then
+    xmodmap $sysmodmap
+fi
+
+if [ -f "$userresources" ]; then
+
+    xrdb -merge "$userresources"
+
+fi
+
+if [ -f "$usermodmap" ]; then
+    xmodmap "$usermodmap"
+fi
+
+# start some nice programs
+
+if [ -d /etc/X11/xinit/xinitrc.d ] ; then
+ for f in /etc/X11/xinit/xinitrc.d/?*.sh ; do
+  [ -x "$f" ] && . "$f"
+ done
+ unset f
+fi
+
+while true
+do
+	LOCALTIME=$(date +%Z\=%Y-%m-%dT%H:%M)
+	IP=$(for i in `ip r`; do echo $i; done | grep -A 1 src | tail -n1)
+	TEMP="$(($(cat /sys/class/thermal/thermal_zone0/temp) / 1000))C"
+	BAT="Bat. $(acpi -b | awk '{ print $4 " " $5 }' | tr -d ',')"
+
+	xsetroot -name "$IP | $BAT | $TEMP | $LOCALTIME"
+	
+	sleep 20s
+done & 
+
+exec dwm

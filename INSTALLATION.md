@@ -23,7 +23,7 @@
 `cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak`
 `grep -E -A 1 ".*Germany.*$" /etc/pacman.d/mirrorlist.bak | sed '/--/d' > /etc/pacman.d/mirrorlist`
 * Installieren des Basissystems
-`pacstrap /mnt base intel-ucode bash-completion wpa_supplicant dialog`
+`pacstrap /mnt base base-devel intel-ucode bash-completion wpa_supplicant dialog`
 * fstab erzeugen und [anpassen](https://wiki.archlinux.de/title/Anleitung_f%C3%BCr_Einsteiger#Das_Basissystem_installieren)
 `genfstab -p /mnt > /mnt/etc/fstab`
 * Wechsel in die chroot Umgebung
@@ -67,3 +67,8 @@
 `systemctl enable --now systemd-timesyncd.service`
 `date`
 `hwclock -w`
+* Installieren und einrichten von networkmanger
+`sudo systemctl enable NetworkManager.service`
+`sudo systemctl start NetworkManager.service`
+`sudo nmcli device wifi connect *SSID* password *password*`
+* Installieren und starten (s.o.) von acpid.service
