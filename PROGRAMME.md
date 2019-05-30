@@ -24,3 +24,4 @@
 * ttf-dejavu
 * st (aur)
 * dwm (aur)
+* acpi

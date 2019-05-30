@@ -9,5 +9,5 @@
 `makepkg -s`
 `makepkg --install`
 * acpi installieren
-* Kopieren der xinitrc (auch Kopie aus git moeglich)
-`cp /etc/X11/xinit/xinitrc ~/.xinitrc`
+* Kopieren der xinitrc aus git
+* Kopieren der bash_profile aus git
