@@ -1,4 +1,5 @@
 # Programmliste
+## Standard Programme
 ---
 * base
 * base-devel
@@ -20,8 +21,13 @@
 * xorg-server
 * xorg-xinit
 * xorg-xsetroot
+* xorg-xbacklight
 * xf86-video-intel
 * ttf-dejavu
 * st (aur)
 * dwm (aur)
 * acpi
+## Sonstiges
+* intellij-idea-community-edition
+* firefox
+* firefox-i18n-de
