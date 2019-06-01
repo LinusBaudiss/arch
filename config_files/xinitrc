@@ -48,4 +48,6 @@ do
 	sleep 20s
 done & 
 
-exec dwm
+exec feh --bg-scale ~/pictures/wallpaper.jpg &
+
+exe dwm

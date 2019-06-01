@@ -32,3 +32,4 @@
 * eclipse-java 
 * firefox
 * firefox-i18n-de
+* feh
