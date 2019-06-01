@@ -29,8 +29,9 @@
 * acpi
 ## Sonstiges
 * cifs-utils
-* eclipse-java 
+* intellij-idea-community-edition 
 * firefox
 * firefox-i18n-de
 * feh
 * maven
+* p7zip
