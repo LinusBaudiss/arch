@@ -16,6 +16,7 @@
 * neofetch
 * networkmanger
 * acpid
+* zsh
 ## x-Server
 ---
 * xorg-server
