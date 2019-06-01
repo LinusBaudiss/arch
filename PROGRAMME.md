@@ -33,3 +33,4 @@
 * firefox
 * firefox-i18n-de
 * feh
+* maven
