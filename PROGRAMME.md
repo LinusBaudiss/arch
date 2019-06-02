@@ -29,6 +29,7 @@
 * st (aur)
 * dwm (aur)
 * acpi
+* slock
 ## Sonstiges
 * cifs-utils
 * intellij-idea-community-edition 
