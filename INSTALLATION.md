@@ -6,7 +6,7 @@
 [Anleitung für Anfänger](https://wiki.archlinux.de/title/Anleitung_für_Einsteiger)
 ---
 ## Vor dem ersten Boot
----)
+---
 * Download des Images
 * Erstellen eines Bootsticks mit dd
   `dd bs=4M if=/pfad/archlinux-*-x86_64.iso of=/dev/sdX status=progress`
@@ -60,9 +60,9 @@
 `useradd -m -g users -s /bin/bash linus`
 * Installieren von sudo, vim
 * Sudo Einrichtung
-`EDITOR=nano visudo`
+`EDITOR=vim visudo`
 `%wheel ALL=(ALL) ALL`
-`gpasswd -a duda wheel`
+`gpasswd -a linus wheel`
 * Setzen der Uhrzeit
 `systemctl enable --now systemd-timesyncd.service`
 `date`

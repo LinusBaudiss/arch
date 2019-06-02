@@ -17,6 +17,7 @@
 * networkmanger
 * acpid
 * zsh
+* oh-my-zsh
 ## x-Server
 ---
 * xorg-server
@@ -36,3 +37,5 @@
 * feh
 * maven
 * p7zip
+* evince
+* gparted
