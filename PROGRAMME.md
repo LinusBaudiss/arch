@@ -40,3 +40,4 @@
 * p7zip
 * evince
 * gparted
+* code
