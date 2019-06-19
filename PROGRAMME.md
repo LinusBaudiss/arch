@@ -41,3 +41,5 @@
 * evince
 * gparted
 * code
+* network-manager-applet
+* lxde
