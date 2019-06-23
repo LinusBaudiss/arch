@@ -43,3 +43,4 @@
 * code
 * network-manager-applet
 * lxde
+* xorg-xwd
