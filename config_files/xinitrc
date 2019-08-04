@@ -58,5 +58,6 @@ wmname LG3D
 
 exec dwm
 
-# Desktop environment for nm-applet
+# Desktop environments
 # exec startlxde
+# exec startkde

@@ -42,5 +42,8 @@
 * gparted
 * code
 * network-manager-applet
-* lxde
 * xorg-xwd
+## Desktops
+* lxde
+* plasma-desktop
+* kde-applications
